@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1a;
+    color: #fff;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00bfff;
+}
+.destinations {
+    padding: 50px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.destination-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.destination {
+    width: 300px;
+    text-align: center;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destination h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00bfff;
+}
+
+.destination p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .destination-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .destination {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .destination {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .destination img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .destination h3 {
+        font-size: 1.3em;
+    }
+
+    .destination p {
+        font-size: 1em;
+    }
+}
